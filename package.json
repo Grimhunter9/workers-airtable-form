@@ -1,4 +1,11 @@
 {
   "name": "workers-airtable-form",
-  "workspaces": ["frontend", "worker"]
+  "workspaces": [
+    "frontend",
+    "worker"
+  ],
+  "dependencies": {
+    "airtable": "^0.11.6",
+    "dotenv": "^16.0.3"
+  }
 }

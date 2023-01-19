@@ -2,7 +2,6 @@ import { PencilAltIcon } from '@heroicons/react/outline'
 
 import Form from './Form'
 
-const REPO_URL = "https://github.com/signalnerve/workers-airtable-form"
 
 const ExternalLink = ({ children, hoverColor = "text-teal-800", href }) =>
   <a
@@ -16,42 +15,7 @@ const ExternalLink = ({ children, hoverColor = "text-teal-800", href }) =>
 export default function FormPage() {
   return (
     <div className="min-h-screen bg-white">
-      <div className="bg-warm-gray-50">
-        <nav
-          className="relative max-w-7xl mx-auto flex items-center justify-between pt-6 px-6 xl:px-8"
-          aria-label="Global"
-        >
-          <div className="flex items-center flex-1">
-            <div className="flex items-center justify-between w-full lg:w-auto">
-              <a href="#">
-                <span className="sr-only">Workflow</span>
-                <PencilAltIcon
-                  className="text-teal-800 h-8 w-auto sm:h-10"
-                />
-              </a>
-            </div>
-          </div>
-        </nav>
-      </div>
-
       <main className="overflow-hidden">
-        {/* Header */}
-        <div className="bg-warm-gray-50">
-          <div className="py-24 lg:py-32">
-            <div className="relative z-10 max-w-7xl mx-auto pl-4 pr-8 sm:px-6 lg:px-8">
-              <h1 className="text-4xl font-extrabold tracking-tight text-warm-gray-900 sm:text-5xl lg:text-6xl">
-                Workers Airtable Form Example
-              </h1>
-              <p className="mt-6 text-xl text-warm-gray-500 max-w-3xl">
-                An example form that uses serverless functions, provided by <ExternalLink href="https://workers.dev">Cloudflare Workers</ExternalLink>, to submit form data to an <ExternalLink href="https://airtable.com">Airtable</ExternalLink> table.{" "}
-                <ExternalLink href={REPO_URL}>
-                  Check out the source to learn more.
-                </ExternalLink>
-              </p>
-            </div>
-          </div>
-        </div>
-
         {/* Contact section */}
         <section className="relative bg-white pb-24" aria-labelledby="contactHeading">
           <div className="absolute w-full h-1/2 bg-warm-gray-50" aria-hidden="true" />
@@ -204,17 +168,6 @@ export default function FormPage() {
           </div>
         </section>
       </main>
-
-      <footer className="bg-warm-gray-900" aria-labelledby="footerHeading">
-        <h2 id="footerHeading" className="sr-only">
-          Footer
-        </h2>
-        <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-          <p className="text-base text-warm-gray-400 xl:text-center">
-            Workers Airtable Form Example is <ExternalLink hoverColor="text-warm-gray-200" href={REPO_URL}>open source on GitHub</ExternalLink>.
-          </p>
-        </div>
-      </footer>
     </div>
   )
 }
