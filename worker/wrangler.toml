@@ -8,4 +8,4 @@ workers_dev = true
 [vars]
 AIRTABLE_BASE_ID = "appI93okOnIYCOyGi"
 AIRTABLE_TABLE_NAME = "Table"
-FORM_URL = "https://workers-airtable-form-bq0.pages.dev"
+FORM_URL = "https://my-profo.vercel.app"
