@@ -1,4 +1,4 @@
-name = "workers-airtable-form"
+name = "mytable"
 type = "Webpack"
 main = "index.js"
 compatibility_date = "2023-01-19"
