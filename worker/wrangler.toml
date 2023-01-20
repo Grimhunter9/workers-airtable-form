@@ -2,10 +2,10 @@ name = "workers-airtable-form"
 type = "Webpack"
 main = "index.js"
 compatibility_date = "2023-01-19"
-account_id = "7208240f19eafab068f3382ad6385a4f"
+account_id = "4083b2248cb43fc8c9d6284a8e359b1d"
 workers_dev = true
 
 [vars]
-AIRTABLE_BASE_ID = "appiMYGKa5q3UBvqD"
-AIRTABLE_TABLE_NAME = "Form Submissions"
-FORM_URL = "https://workers-airtable-form-3o9.pages.dev"
+AIRTABLE_BASE_ID = "appI93okOnIYCOyGi"
+AIRTABLE_TABLE_NAME = "Table"
+FORM_URL = "https://workers-airtable-form-bq0.pages.dev"
